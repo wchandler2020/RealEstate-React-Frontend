@@ -1,0 +1,73 @@
+#filter {
+  background: #f1f1f2;
+  display: grid;
+  justify-content: center;
+  float: left;
+  width: 22%;
+  color: #333 !important;
+  height: 100vh;
+}
+
+#filter h4 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+#filter .inside {
+  padding: 20px 30px;
+  max-width: 300px;
+}
+
+#filter .inside .title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+#filter select {
+  background: transparent !important;
+  padding: 10px !important;
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+  color: #666 !important;
+  display: block !important;
+  margin-bottom: 20px;
+}
+
+#filter .filters .title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+#filter input[type="text"] {
+  display: inline-block !important;
+  font-size: 0.9rem !important;
+  width: 45% !important;
+  margin: 0 2.5% 10px 0;
+  padding: 0.4rem !important;
+  border-radius: 5px;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+.amenities label {
+  display: block !important;
+  width: 100% !important;
+  font-size: 0.6rem !important;
+}
+
+.form-check-input {
+  margin-left: 1rem;
+}
+
+.form-check-input input[type="checkbox"] {
+  float: right !important;
+}

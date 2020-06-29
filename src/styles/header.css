@@ -1,0 +1,30 @@
+.navbar {
+  background: #011a27 !important;
+}
+
+.navbar-brand {
+  font-size: 2.5rem !important;
+}
+
+.nav-link {
+  font-size: 1rem !important;
+  color: #fff !important;
+  margin: 5px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.nav-link:hover {
+  color: #f52549 !important;
+}
+
+.highlight {
+  background: #f52549;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.highlight:hover {
+  background: #fff;
+  border: 1px solid #f52549;
+}
