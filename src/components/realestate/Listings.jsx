@@ -13,7 +13,19 @@ import {
 
 class Listings extends Component {
   render() {
-    console.log(this.props.listingData);
+    if (
+      this.props.listingData == undefined ||
+      this.props.listingData.length == 0
+    ) {
+      return (
+        <span className="alert alert-danger" role="alert">
+          <h2>
+            No result matching your criteria, please try again or check back
+            again soon.
+          </h2>
+        </span>
+      );
+    }
     return (
       <section id="home-section">
         <section id="listings">
@@ -66,7 +78,7 @@ class Listings extends Component {
                       <div className="floor-space">
                         <FaRulerCombined />
                         <span className="ml-1">
-                          {listing.floorspace}ft&sup2;
+                          {listing.floorSpace}ft&sup2;
                         </span>
                       </div>
                       <div className="bedrooms">
@@ -109,7 +121,7 @@ class Listings extends Component {
         <section id="pagination">
           <ul className="pages">
             <li>Prev</li>
-            <li class="active">1</li>
+            <li className="active">1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>

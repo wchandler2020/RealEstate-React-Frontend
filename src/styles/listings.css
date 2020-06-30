@@ -7,6 +7,15 @@
   text-align: center;
 }
 
+.alert-danger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  margin: auto auto;
+}
+
 #listings {
   width: 100%;
   float: left;

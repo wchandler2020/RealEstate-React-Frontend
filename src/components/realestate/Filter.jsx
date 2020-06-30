@@ -7,7 +7,12 @@ class Filter extends Component {
         <div className="inside">
           <h4 className="pt-3">Filter</h4>
           <span className="title">State:</span>
-          <select name="states" class="form-control">
+          <select
+            name="state"
+            value={this.props.globalState.state}
+            className="form-control"
+            onChange={this.props.handleChange}
+          >
             <option value="CHOOSE YOUR STATE">Choose Your State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -62,7 +67,12 @@ class Filter extends Component {
             <option value="WY">Wyoming</option>
           </select>
           <span className="title">Home Type:</span>
-          <select name="home_type" id="" class="form-control">
+          <select
+            name="homeType"
+            id=""
+            className="form-control"
+            onChange={this.props.handleChange}
+          >
             <option value="ANY">Any</option>
             <option value="SINGLE">Single Family</option>
             <option value="CONDO">Condo/Co-op</option>
@@ -70,15 +80,27 @@ class Filter extends Component {
             <option value="TOWNHOME">Townhome</option>
           </select>
           <span className="title">Bedrooms:</span>
-          <select name="bedrooms" id="" class="form-control">
+          <select
+            name="bedrooms"
+            value={this.props.globalState.bedrooms}
+            id=""
+            className="form-control"
+            onChange={this.props.handleChange}
+          >
             <option value="ANY">Any</option>
-            <option value="2 Bedroom">2 Bedrooms</option>
-            <option value="3 Bedroom">3 Bedroomsp</option>
-            <option value="4 Bedrooms">4 Bedrooms</option>
-            <option value="Plus Four">+4 Bedrooms</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3 Bedroomsp</option>
+            <option value="4">4 Bedrooms</option>
+            <option value="4 plus">+4 Bedrooms</option>
           </select>
           <span className="title">Bathrooms:</span>
-          <select name="bedrooms" id="" class="form-control">
+          <select
+            name="bathrooms"
+            value={this.props.globalState.bathrooms}
+            id=""
+            className="form-control"
+            onChange={this.props.handleChange}
+          >
             <option value="ANY">Any</option>
             <option value="2 Bathroom">2 Bathrooms</option>
             <option value="3 Bathroom">3 Bathroomsp</option>
@@ -89,59 +111,74 @@ class Filter extends Component {
             <span className="title">Price:</span>
             <input
               type="text"
-              name="min-price"
-              class="form-control min-price"
+              name="minPrice"
+              value={this.props.globalState.minPrice}
+              className="form-control min-price"
               placeholder="min"
+              onChange={this.props.handleChange}
             />
             <input
               type="text"
-              name="max-price"
-              class="form-control max-price"
+              name="maxPrice"
+              value={this.props.globalState.maxPrice}
+              className="form-control max-price"
               placeholder="max"
+              onChange={this.props.handleChange}
             />
           </div>
           <div className="filters floor-space form-group">
             <span className="title">Floor Space:</span>
             <input
               type="text"
-              name="min-space"
-              class="form-control min-space"
+              name="minSpace"
+              value={this.props.globalState.minSpace}
+              className="form-control min-space"
               placeholder="min"
+              onChange={this.props.handleChange}
             />
             <input
               type="text"
-              name="max-space"
-              class="form-control max-space"
+              name="maxSpace"
+              value={this.props.globalState.maxSpace}
+              className="form-control max-space"
               placeholder="max"
+              onChange={this.props.handleChange}
             />
           </div>
           <div className="amenities filters">
             <span className="title">Amenities:</span>
-            <label class="form-check-label" htmlFor="pool">
-              <span class="label">In Ground Pool</span>
+            <label className="form-check-label" htmlFor="pool">
+              <span className="label">In Ground Pool</span>
               <input
-                class="form-check-input"
+                className="form-check-input"
+                name="pool"
                 type="checkbox"
                 value="pool"
                 id="pool"
+                onChange={this.props.handleChange}
               />
             </label>
-            <label class="form-check-label" htmlFor="garage">
+            <label className="form-check-label" htmlFor="garage">
               <span className="label">Garage</span>
               <input
-                class="form-check-input"
+                className="form-check-input"
+                name="garage"
+                pool="garage"
                 type="checkbox"
                 value="garage"
                 id="garage"
+                onChange={this.props.handleChange}
               />
             </label>
-            <label class="form-check-label" htmlFor="basement">
+            <label className="form-check-label" htmlFor="basement">
               <span className="label">Finished Basement</span>
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
-                value="garage"
-                id="garage"
+                name="basement"
+                value="basement"
+                id="basement"
+                onChange={this.props.handleChange}
               />
             </label>
           </div>

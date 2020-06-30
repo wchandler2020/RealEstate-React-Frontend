@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 const titles = [
-  "a place for new beginnings",
-  "a place of warmth and welcome",
-  "where you feel loved, appreciated and safe",
-  " more than just brick and mortar, it is the people who love you",
+  "a made for new beginnings",
+  "the starting place of love",
+  "not a place but a feeling",
+  "made of hopes and dreams",
 ];
 
 class Hero extends Component {

@@ -1,4 +1,4 @@
-const data = [
+const listingData = [
   {
     id: 1,
     homeType: "Single Family",
@@ -158,4 +158,4 @@ const data = [
   },
 ];
 
-export default data;
+export default listingData;
